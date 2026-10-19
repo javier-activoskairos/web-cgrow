@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <title>CGROW — Consultoría empresarial, alto rendimiento y estrategia de marca</title>
   <meta name="description" content="Consultoría empresarial, alto rendimiento y estrategia de marca para negocios que buscan su próximo nivel.">
   <link rel="canonical" href="https://cgrow.co/">
+  <meta name="theme-color" content="#080c10">
   <meta property="og:type" content="website">
   <meta property="og:title" content="CGROW — Hacemos crecer personas. Hacemos crecer empresas.">
   <meta property="og:description" content="Consultoría empresarial, alto rendimiento y estrategia de marca para negocios que buscan su próximo nivel.">
@@ -15,112 +17,181 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <img class="hero-logo" src="/assets/logo-white.png" alt="CGROW" width="220" height="220">
-    <h1>Hacemos crecer personas.<br>Hacemos crecer empresas.</h1>
-    <p class="hero-sub">Consultoría empresarial, alto rendimiento y estrategia de marca para negocios que buscan su próximo nivel.</p>
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="CGROW, inicio">
+        <img src="/assets/cgrow-mark.png" alt="" width="12" height="20">
+        <img src="/assets/cgrow-wordmark.png" alt="CGROW" width="77" height="14">
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#que-hacemos">Qué hacemos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn--ghost btn--sm" href="#contacto">Agendar consultoría</a>
+    </div>
   </header>
 
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="hero__spire hero__spire--1"></span>
+      <span class="hero__spire hero__spire--2"></span>
+      <span class="hero__spire hero__spire--3"></span>
+      <span class="hero__spire hero__spire--4"></span>
+      <span class="hero__spire hero__spire--5"></span>
+      <span class="hero__base"></span>
+    </div>
+    <div class="hero__content">
+      <img class="hero__logo" src="/assets/cgrow-logo.png" alt="CGROW" width="186" height="170">
+      <h1>Hacemos crecer personas.<br>Hacemos crecer <em>empresas.</em></h1>
+      <p class="hero__sub">Consultoría empresarial, alto rendimiento y estrategia de marca para negocios que buscan su próximo nivel.</p>
+      <div class="hero__actions">
+        <a class="btn btn--brand" href="#contacto"><span class="btn__label">Agendar consultoría</span><span class="btn__disc" aria-hidden="true"></span><svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--ghost" href="#que-hacemos">Qué hacemos</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="intro">
-      <p>En CGROW impulsamos el crecimiento integral de tu empresa combinando consultoría estratégica, desarrollo de personas y fortalecimiento de marca.</p>
-      <p>Partimos de un análisis y diagnóstico riguroso de tu negocio para diseñar soluciones concretas: mejora de procesos, eficientización de la cadena de suministro, y digitalización y profesionalización de la operación.</p>
-      <p>Porque una empresa solo rinde al máximo cuando sus equipos rinden al máximo, trabajamos el desempeño de mandos medios y altos —y de sus equipos— a través de coaching de alta performance, para que alcancen su mejor versión.</p>
-      <p>Y para que tu presencia externa esté a la altura de tu solidez interna, potenciamos tu marca junto a partners especializados en marketing, campañas y eventos corporativos.</p>
-      <p>El equipo de CGROW acompaña a cada cliente desde el diagnóstico inicial hasta la implementación de soluciones concretas y medibles.</p>
+    <section class="intro container">
+      <div class="intro__lede reveal">
+        <p class="eyebrow">CGROW</p>
+        <p class="display">En CGROW impulsamos el crecimiento <em>integral</em> de tu empresa combinando consultoría estratégica, desarrollo de personas y fortalecimiento de marca.</p>
+      </div>
+      <div class="intro__body reveal">
+        <p>Partimos de un análisis y diagnóstico riguroso de tu negocio para diseñar soluciones concretas: mejora de procesos, eficientización de la cadena de suministro, y digitalización y profesionalización de la operación.</p>
+        <p>Porque una empresa solo rinde al máximo cuando sus equipos rinden al máximo, trabajamos el desempeño de mandos medios y altos —y de sus equipos— a través de coaching de alta performance, para que alcancen su mejor versión.</p>
+        <p>Y para que tu presencia externa esté a la altura de tu solidez interna, potenciamos tu marca junto a partners especializados en marketing, campañas y eventos corporativos.</p>
+        <p class="intro__close">El equipo de CGROW acompaña a cada cliente desde el diagnóstico inicial hasta la implementación de soluciones concretas y medibles.</p>
+      </div>
     </section>
 
-    <section class="about" id="about">
-      <h2>Quiénes somos</h2>
-      <div class="rule"></div>
-      <div class="pillars">
-        <article>
-          <img src="/assets/logo-fondo-blanco.jpg" alt="" width="168" height="168" loading="lazy">
+    <section class="about container" id="quienes-somos">
+      <div class="section-head reveal">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2>Misión, visión, <em>valores</em> y filosofía</h2>
+      </div>
+      <div class="about__grid">
+        <article class="tile reveal">
+          <span class="tile__num">01</span>
           <h3>Misión</h3>
           <p>Brindar consultoría empresarial de excelencia —basada en el análisis, el diagnóstico y la solución— para diseñar respuestas concretas que profesionalicen y hagan crecer a nuestros clientes, con un enfoque disciplinado y transparente.</p>
         </article>
-        <article>
-          <img src="/assets/logo-fondo-blanco.jpg" alt="" width="168" height="168" loading="lazy">
+        <article class="tile reveal">
+          <span class="tile__num">02</span>
           <h3>Visión</h3>
           <p>Ser el partner estratégico de referencia para empresas y líderes que buscan alcanzar su máximo potencial, dentro y fuera de la organización.</p>
         </article>
-        <article>
-          <img src="/assets/logo-fondo-blanco.jpg" alt="" width="168" height="168" loading="lazy">
+        <article class="tile reveal">
+          <span class="tile__num">03</span>
           <h3>Valores</h3>
           <p>En CGROW construimos relaciones duraderas sobre la base de la <strong>integridad</strong>, la <strong>transparencia</strong> y la búsqueda constante de la <strong>excelencia</strong>. Fomentamos la <strong>colaboración</strong> y la <strong>innovación</strong> para entregar soluciones personalizadas que ponen siempre primero <strong>los intereses de nuestros clientes</strong>.</p>
         </article>
-        <article>
-          <img src="/assets/logo-fondo-blanco.jpg" alt="" width="168" height="168" loading="lazy">
+        <article class="tile reveal">
+          <span class="tile__num">04</span>
           <h3>Filosofía</h3>
           <p>El equipo de CGROW está dedicado a ayudar a sus clientes a alcanzar sus objetivos de negocio y a construir crecimiento sostenible en el tiempo.</p>
         </article>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <h2>Qué hacemos</h2>
-      <div class="rule"></div>
-      <div class="service">
-        <div class="visual v1" aria-hidden="true"></div>
-        <div class="copy">
+    <section class="services container" id="que-hacemos">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Qué hacemos</p>
+        <h2>Tres pilares, un solo <em>partner</em></h2>
+      </div>
+      <article class="service service--dark reveal">
+        <div class="service__head">
+          <span class="service__num">01</span>
           <h3>Consultoría Empresarial</h3>
-          <p>Analizamos, diagnosticamos y resolvemos. Identificamos los cuellos de botella de tu negocio y diseñamos soluciones a medida para mejorar procesos, eficientizar tu cadena de suministro y acelerar la digitalización y profesionalización de tu empresa.</p>
         </div>
-      </div>
-      <div class="service reverse">
-        <div class="visual v2" aria-hidden="true"></div>
-        <div class="copy">
+        <div class="service__body">
+          <p class="service__kicker">Analizamos, diagnosticamos y resolvemos.</p>
+          <p>Identificamos los cuellos de botella de tu negocio y diseñamos soluciones a medida para mejorar procesos, eficientizar tu cadena de suministro y acelerar la digitalización y profesionalización de tu empresa.</p>
+        </div>
+      </article>
+      <article class="service service--light reveal">
+        <div class="service__head">
+          <span class="service__num">02</span>
           <h3>Coaching de Alta Performance</h3>
-          <p>Porque una empresa rinde al máximo cuando sus equipos rinden al máximo. Trabajamos con mandos medios, mandos altos y sus equipos para que alcancen su mejor versión y performen a su nivel más alto, dentro y fuera de la oficina.</p>
         </div>
-      </div>
-      <div class="service">
-        <div class="visual v4" aria-hidden="true"></div>
-        <div class="copy">
+        <div class="service__body">
+          <p class="service__kicker">Porque una empresa rinde al máximo cuando sus equipos rinden al máximo.</p>
+          <p>Trabajamos con mandos medios, mandos altos y sus equipos para que alcancen su mejor versión y performen a su nivel más alto, dentro y fuera de la oficina.</p>
+        </div>
+      </article>
+      <article class="service service--dark reveal">
+        <div class="service__head">
+          <span class="service__num">03</span>
           <h3>Marketing &amp; Brand Strategy</h3>
-          <p>Amplificamos tu autoridad de mercado y construimos tu legado. Junto a partners especializados, diseñamos identidades de marca cohesivas, lanzamos campañas de marketing targeteadas y producimos eventos corporativos de alto impacto que conectan con tus audiencias clave, asegurando que tu presencia externa esté a la altura de tu solidez interna.</p>
         </div>
+        <div class="service__body">
+          <p class="service__kicker">Amplificamos tu autoridad de mercado y construimos tu legado.</p>
+          <p>Junto a partners especializados, diseñamos identidades de marca cohesivas, lanzamos campañas de marketing targeteadas y producimos eventos corporativos de alto impacto que conectan con tus audiencias clave, asegurando que tu presencia externa esté a la altura de tu solidez interna.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta container reveal">
+      <h2>¿Listo para alinear a tu equipo, optimizar tus operaciones y hacer crecer tu <em>marca?</em></h2>
+      <p>El crecimiento sostenido ocurre cuando tus capacidades internas están a la altura de tu presencia en el mercado. Sumate a CGROW y combiná consultoría empresarial, coaching de alta performance y estrategia de marca en un solo partner.</p>
+      <a class="btn btn--primary" href="#contacto"><span class="btn__label">Agendar consultoría</span><span class="btn__disc" aria-hidden="true"></span><svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact__inner container">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Agendá tu consultoría <em>estratégica</em></h2>
+          <p>Completá el formulario para agendar tu consultoría estratégica con nuestro equipo de expertos.</p>
+          <dl class="contact__meta">
+            <div><dt>Email</dt><dd><a href="mailto:lucas@cgrow.co">lucas@cgrow.co</a></dd></div>
+          </dl>
+        </div>
+        <form class="form reveal" id="contact-form" novalidate>
+          <label>Nombre<input name="name" type="text" autocomplete="name"></label>
+          <label>Email*<input name="email" type="email" required autocomplete="email"></label>
+          <label>Mensaje<textarea name="message" rows="5"></textarea></label>
+          <button class="btn btn--primary" type="submit"><span class="btn__label">Enviar</span><span class="btn__disc" aria-hidden="true"></span><svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="form__note" role="status"></p>
+        </form>
       </div>
-    </section>
-
-    <section class="quote">
-      <img src="/assets/logo-white.png" alt="" width="260" height="260" loading="lazy">
-      <blockquote>
-        <span aria-hidden="true">“</span>
-        <p>¿Listo para alinear a tu equipo, optimizar tus operaciones y hacer crecer tu marca?</p>
-        <p class="quote-sub">El crecimiento sostenido ocurre cuando tus capacidades internas están a la altura de tu presencia en el mercado. Sumate a CGROW y combiná consultoría empresarial, coaching de alta performance y estrategia de marca en un solo partner.</p>
-      </blockquote>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Contacto</h2>
-      <div class="rule"></div>
-      <p class="lead">Completá el formulario para agendar tu consultoría estratégica con nuestro equipo de expertos.</p>
-      <form id="contact-form" novalidate>
-        <input name="name" type="text" placeholder="Nombre" autocomplete="name">
-        <input name="email" type="email" placeholder="Email*" required autocomplete="email">
-        <textarea name="message" placeholder="Mensaje" rows="6"></textarea>
-        <button type="submit">Enviar</button>
-        <p class="form-note" role="status"></p>
-      </form>
     </section>
   </main>
 
-  <footer>
-    <p>Copyright © <span id="year">2026</span> CGROW - Todos los derechos reservados.</p>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p>Copyright © <span id="year">2026</span> CGROW - Todos los derechos reservados.</p>
+      <img src="/assets/cgrow-mark.png" alt="" width="14" height="24">
+      <a href="mailto:lucas@cgrow.co">lucas@cgrow.co</a>
+    </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    var nav = document.getElementById('nav');
+    var onScroll = function () { nav.classList.toggle('nav--solid', window.scrollY > 40); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+
     document.getElementById('contact-form').addEventListener('submit', function (e) {
       e.preventDefault();
-      var f = e.target, note = f.querySelector('.form-note');
-      if (!f.email.value || !f.email.checkValidity()) { note.textContent = 'Ingresá un email válido.'; return; }
+      var f = e.target, note = f.querySelector('.form__note');
+      if (!f.email.value || !f.email.checkValidity()) { note.textContent = 'Ingresá un email válido.'; f.email.focus(); return; }
       var body = 'Nombre: ' + f.name.value + '\nEmail: ' + f.email.value + '\n\n' + f.message.value;
       location.href = 'mailto:lucas@cgrow.co?subject=' + encodeURIComponent('Solicitud de consultoría — ' + (f.name.value || f.email.value)) + '&body=' + encodeURIComponent(body);
       note.textContent = 'Abriendo tu aplicación de correo…';
